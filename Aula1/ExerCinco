@@ -1,0 +1,21 @@
+public class ExerCinco
+{
+    public static void main (String args[]){
+        
+
+            System.out.print(" Digite a temperatura em graus Celsius: ");
+            double celsius = 5;
+
+        double fahrenheit = celsius * 1.8 + 32;
+        double kelvin = celsius + 273.15;
+        double reaumur = celsius * 0.8;
+        double rankine = celsius * 1.8 + 32 + 459.67;
+
+            System.out.println("Temperatura em Celsius (C): " + celsius);
+            System.out.println("Temperatura em Fahrenheit (F): " + fahrenheit);
+            System.out.println("Temperatura em Kelvin (K): " + kelvin);
+            System.out.println("Temperatura em Réaumur (Re): " + reaumur);
+            System.out.println("Temperatura em Rankine (Ra): " + rankine);
+   
+    }
+}
