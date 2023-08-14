@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+//b * b - b * a * c;
+
+public class ExerUm {
+    public static void main(String[] args){
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o coeficiente 'a': ");
+        double a = scanner.nextDouble();
+        
+        System.out.println("Digite o coeficiente 'b': ");
+        double b = scanner.nextDouble();
+        
+        System.out.println("Digite o coeficiente 'c': ");
+        double c = scanner.nextDouble();
+        
+        double delta = b * b - 4 * a * c;
+        double twoA = 2 * a;
+        
+        double sqrtDelta = Math.sqrt(Math.abs(delta));
+        
+        double x1Real =  -b / twoA;
+        double x1Imaginary = sqrtDelta / twoA;
+        
+        double x2Real = x1Real;
+        double x2Imaginary = x1Imaginary;
+        
+        System.out.println("A equação possui duas raízes: " );
+        System.out.println("x1 = " + x1Real + " + " + x1Imaginary + "i");
+        System.out.println("x2 = " + x2Real + " + " + x2Imaginary + "i");
+        
+        scanner.close();
+        
+        
+    }
+}
