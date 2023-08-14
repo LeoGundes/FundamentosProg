@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ExerTres {
+    public static void main(String[] args){
+        
+        int a = 4;
+        int b = 5;
+        
+        System.out.println("Início: a = " + a + " e b = " + b);
+        
+        int temp = a;
+        a = b;
+        b = temp;
+        
+        System.out.println("Final: a = " + a + " e b = " + b);
+        
+    }
+}
