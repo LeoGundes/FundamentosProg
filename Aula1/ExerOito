@@ -1,0 +1,20 @@
+public class ExerOito
+{
+   
+    public static void main(String[] args) {
+        
+        double baseMaior = 10.0;
+        double alturaMaior = 15.0;
+        double baseMenor = 5.0;
+        double alturaMenor = 8.0;
+        
+        double areaMaior = baseMaior * alturaMaior;
+        double areaMenor = baseMenor * alturaMenor;
+        double areaLivre = areaMaior - areaMenor;
+        double porcentagem = (areaLivre / areaMaior) * 100;
+        
+        System.out.println("A área livre é de " + areaLivre + " metros quadrados.");
+        System.out.printf("Isso representa " + porcentagem + "%%" + " da área total do retângulo maior.");
+      
+ }
+}
