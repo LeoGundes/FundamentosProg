@@ -1,0 +1,18 @@
+public class ExerSete
+{
+   public static void main (String args[]){
+       
+       int totalTempoSegundos = 4784;
+       int horas = totalTempoSegundos / 3600;
+       int restoH = totalTempoSegundos - 3600 * horas;
+       
+       int minutos = restoH / 60;
+       int restoM = restoH - 60 * minutos;
+       int segundos = restoM;
+       
+         String tempo = "Agora são ";
+       
+         System.out.println( tempo + horas + " horas " + minutos + " minutos " + " e " + segundos + " segundos.");  
+         
+ }
+}
