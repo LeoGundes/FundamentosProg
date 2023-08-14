@@ -1,0 +1,14 @@
+public class ExerTres
+{
+    public static void main (String args[]){
+        
+        double x = 2.9;
+        double y = 5.7;
+        double z = x + y;
+        
+          String somaDecimal = "A soma de x e y é ";
+        
+          System.out.println(somaDecimal + z);
+        
+    }
+}
