@@ -1,0 +1,15 @@
+public class ExerSeis
+{
+    public static void main (String args[]){
+        
+        double altura = 6;
+        double largura = 4;
+        double comprimento = 9;
+        
+        double area = altura * largura;
+        System.out.println("Área do quadrado: " + area);
+        
+        double volume = area * comprimento;
+        System.out.println("Volume do quadrado: " + volume);
+    }
+}
