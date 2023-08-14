@@ -1,0 +1,15 @@
+public class ExerUm
+{
+  public static void main (String args[]){
+    // Metodo para printar (mostrar na tela)
+    System.out.println("Hello World");
+    
+    int x = 2;
+    int y = 1;
+    int z = x + y;
+    
+    String calculoLiberta = "A soma das Libertadores ganhas pelo Inter + a Libertadores de 2023 é ";
+    
+    System.out.println( calculoLiberta + z );
+  }
+}
