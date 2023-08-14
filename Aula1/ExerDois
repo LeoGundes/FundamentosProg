@@ -1,0 +1,16 @@
+public class ExerDois
+{
+    public static void main (String args[]){
+        
+        int dia = 4;
+        int mes = 11;
+        int ano = 23;
+        
+        String barra = "/";
+        
+    String finalLiberta = "A data do jogo da final da Libertadores é ";
+        
+    System.out.println(finalLiberta + dia + barra + mes + barra + ano);
+           
+    }
+}
