@@ -1,0 +1,17 @@
+public class ExerQuatro
+{
+    public static void main (String args[]){
+        
+        char um = 'R';
+        char dois = 'o';
+        char tres = 'c';
+        char quatro = 'h';
+        char cinco = 'e';
+        char seis = 't';
+        
+           String goleiro = "O nome do goleiro do Inter de Porto Alegre é ";
+        
+           System.out.print(goleiro + um + dois + tres + quatro + cinco + seis + ".");
+        
+    }
+}
