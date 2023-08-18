@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class ExerUm{
+    public static void main(String [] args){
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        //String pedir = "Informe um número e te direi se é positivo ou negativo: ";
+        
+        int x;
+        
+        String pedir = "Informe um número e te direi se é positivo ou negativo: ";
+        
+        System.out.println(pedir);
+        
+        
+        x = digitar.nextInt();
+        
+        if (x > 0) {
+            System.out.println(" O seu número é positivo! ");
+            
+        } else if (x < 0) {
+            System.out.println(" O seu número é negativo! ");
+            
+        } else if (x == 0) {
+            System.out.println(" O seu número é 0! ");
+            
+        }
+            
+        }
+    }
+
