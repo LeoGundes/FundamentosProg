@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ExerDois{
+    public static void main(String [] args){
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        int x;
+        
+        String pedir = " Me diga um número e te direi se ele é par ou ímpar. ";
+        System.out.println(pedir);
+        
+        x = digitar.nextInt();
+        
+        if (x % 2 >= 0) {
+            
+            System.out.println(" O número escolhido é par! ");
+            
+        } else if (x % 2 != 0) {
+            
+            System.out.println(" O número escolhido é ímpar! ");
+            
+        } else if (x == 0) {
+            
+            System.out.println(" O número escolhido é 0! ");
+            
+        }
+            
+        }
+    }
+
