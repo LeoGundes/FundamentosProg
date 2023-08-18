@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+//Verificação de Voto: Peça ao usuário para inserir sua idade. Verifique se a pessoa
+//pode votar ou não nas eleições, considerando a idade mínima de 18 anos.
+
+public class ExerTres{
+    public static void main(String[] args){
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        int x;
+        
+        String idadeUsuario = "Me informe sua idade: ";
+        System.out.println(idadeUsuario);
+
+        x = digitar.nextInt();
+        
+        if (x >= 18) {
+            
+            System.out.println(" Você está apto para votar. "); 
+            
+        } else if (x < 18) {
+            
+            System.out.println(" Você não está apto para votar. ");
+            
+        }
+    }
+}
