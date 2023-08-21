@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+/*Iden2ficação de Triângulo: Peça ao usuário para inserir três lados de um triângulo.
+Verifique e exiba se o triângulo é equilátero, isósceles ou escaleno. Lembre que
+nenhum lado pode ser nega8vo!*/
+
+public class ExerCinco {
+    public static void main(String[] args) {
+        
+     Scanner digitar = new Scanner(System.in);
+     
+     double a;
+     double b;
+     double c;
+     
+     System.out.println(" Insira o 1° lado de um triângulo: ");
+     a = digitar.nextDouble();
+     
+     System.out.println(" Insira o 2° lado de um triângulo: ");
+     b = digitar.nextDouble();
+     
+     System.out.println(" Insira o 3° lado de um triângulo: ");
+     c = digitar.nextDouble();
+     
+     if (a == b && b == c) {
+         
+         System.out.println(" Triângulo Equilátero ");
+         
+     } else if(a == b && b != c) {
+         
+         System.out.println(" Triângulo Isóceles ");
+         
+     }else if (a != b && b != c) {
+         
+         System.out.println(" Triângulo Escaleno ");
+         
+     }
+        
+ }
+}
