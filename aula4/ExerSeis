@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+/*Cálculo de Desconto: Peça ao usuário para inserir o valor total de uma compra. Com
+base no valor, aplique diferentes descontos: 10% para compras acima de R$ 100, 15%
+para compras acima de R$ 250 e 20% para compras acima de R$ 500. Exiba o valor
+final.*/
+
+public class ExerSeis {
+    public static void main(String[] args) {
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        double a;
+        
+        String compra = "Me informe o preço da sua compra: ";
+        System.out.print(compra);
+        
+        x = digitar.nextInt();
+        
+        if (x < 100) {
+            
+            System.out.println(" Você não ganhou desconto. ");
+            
+        } else if (x >= 100 && x < 250) {
+            
+            int desconto10 = x / 100 * 10;
+            
+            System.out.println(" Seu desconto foi de " + desconto10 + " reais. ");
+            
+        } else if (x >= 250 && x < 500) {
+            
+            int desconto15 = x / 100 * 15;
+            
+            System.out.println(" Seu desconto foi de " + desconto15 + " reais. ");
+            
+        } else if ( x > 500 ) {
+            
+            int desconto20 = x / 100 * 20;
+            
+            System.out.println(" Seu desconto foi de " + desconto20 + " reais. ");
+            
+        }
+        
+    }
+    
+}
