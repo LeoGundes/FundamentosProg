@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+/*Questão 2: Escolha de Operação Matemática
+Peça ao usuário para inserir dois números e um operador matemático (+, -, *, /). Realize
+a operação correspondente e exiba o resultado.*/
+
+public class ExerDois{
+    public static void main(String[] args){
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        int x;
+        int y;
+        
+        String op;
+        
+        System.out.println("Insira dois números e um operador matemático e te direi o resultado");
+        
+        System.out.println("Insira o primeiro número");
+        x = digitar.nextInt();
+        
+        System.out.println("Insira o operador matemático");
+        op = digitar.next();
+        
+        System.out.println("Insira o segundo número");
+        y = digitar.nextInt();
+        
+        double s = x + y;
+        double st = x - y;
+        double m = x * y;
+        double d = x / y;
+        
+        switch(op){
+            case "soma":
+                System.out.println("O resultado é " + s);
+                break;
+            case "subtracao":
+                System.out.println("O resultado é " + st);
+                break;
+            case "multiplicacao":
+                System.out.println("O resultado é " + m);
+                break;
+            case "divisao":
+                System.out.println("O resultado é " + d);
+        }
+        
+    }
+}
