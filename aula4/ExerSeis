@@ -5,39 +5,51 @@ base no valor, aplique diferentes descontos: 10% para compras acima de R$ 100, 1
 para compras acima de R$ 250 e 20% para compras acima de R$ 500. Exiba o valor
 final.*/
 
-public class ExerSeis {
+public class ExerSeis4 {
     public static void main(String[] args) {
         
         Scanner digitar = new Scanner(System.in);
         
         double a;
         
+        double x1;
+        double x2;
+        
+        double y1;
+        double y2;
+        
+        double z1;
+        double z2;
+        
         String compra = "Me informe o preço da sua compra: ";
         System.out.print(compra);
         
-        x = digitar.nextInt();
+        a = digitar.nextDouble();
         
-        if (x < 100) {
+        x1 = a / 100 * 10;
+        x2 = a - x1;
+        
+        y1 = a / 100 * 15;
+        y2 = a - y1;
+        
+        z1 = a / 100 * 20;
+        z2 = a - z1;
+        
+        if (a >= 100 && a < 250) {
             
-            System.out.println(" Você não ganhou desconto. ");
+            System.out.print(" Com o desconto de 10%, sua compra ficou em " + x2 + " reais");
             
-        } else if (x >= 100 && x < 250) {
+        } else if (a >= 250 && a < 500) {
             
-            int desconto10 = x / 100 * 10;
+            System.out.print(" Com o desconto de 15%, sua compra ficou em " + y2 + " reais");
             
-            System.out.println(" Seu desconto foi de " + desconto10 + " reais. ");
+        } else if (a >= 500) {
             
-        } else if (x >= 250 && x < 500) {
+            System.out.println(" Com o desconto de 20%, sua compra ficou em " + z2 + " reais");
             
-            int desconto15 = x / 100 * 15;
+        } else if (a < 100) {
             
-            System.out.println(" Seu desconto foi de " + desconto15 + " reais. ");
-            
-        } else if ( x > 500 ) {
-            
-            int desconto20 = x / 100 * 20;
-            
-            System.out.println(" Seu desconto foi de " + desconto20 + " reais. ");
+            System.out.println(" Você não ganhou desconto.");
             
         }
         
