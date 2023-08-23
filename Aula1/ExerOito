@@ -1,20 +1,30 @@
-public class ExerOito
-{
-   
-    public static void main(String[] args) {
+/*Faça um programa para calcular a área livre, em metros quadrados e
+porcentagem, de um retângulo maior que possui um retângulo menor no seu
+interior.*/
+
+
+public class ExerOito{
+    public static void main(String[] args){
         
-        double baseMaior = 10.0;
-        double alturaMaior = 15.0;
-        double baseMenor = 5.0;
-        double alturaMenor = 8.0;
+        //dimensões do quadrado maior
+        double larguraMaior = 10.0;
+        double comprimentoMaior = 20.0;
         
-        double areaMaior = baseMaior * alturaMaior;
-        double areaMenor = baseMenor * alturaMenor;
-        double areaLivre = areaMaior - areaMenor;
-        double porcentagem = (areaLivre / areaMaior) * 100;
+        //dimensões do quadrado menor
+        double larguraMenor = 4.0;
+        double comprimentoMenor = 8.0;
         
-        System.out.println("A área livre é de " + areaLivre + " metros quadrados.");
-        System.out.printf("Isso representa " + porcentagem + "%%" + " da área total do retângulo maior.");
-      
- }
+        //calculando as areas
+        double areaTotal = larguraMaior * comprimentoMaior;
+        double areaInterno = larguraMenor * comprimentoMenor;
+        double areaLivre = areaTotal - areaInterno;
+        
+        //calculando a porcentagem
+        double porcentagemLivre = (areaLivre / areaTotal) * 100;
+        
+        System.out.println("Área livre: " + areaLivre + " metros quadrados.");
+        
+        System.out.println("Porcentagem livre: " + porcentagemLivre + "%");
+        
+    }
 }
