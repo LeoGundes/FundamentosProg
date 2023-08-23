@@ -1,0 +1,38 @@
+import java.util.*;
+
+/*Classificação de Idade: Peça ao usuário para inserir sua idade. Com base na idade,
+exiba uma mensagem de classificação como "Criança", "Adolescente", "Adulto" ou
+"Idoso".*/
+
+public class ExerSete4 {
+    public static void main(String[] args) {
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        int idade;
+        
+        String idadeU = "Me informe sua idade.";
+        System.out.println(idadeU);
+        
+        idade = digitar.nextInt();
+        
+        if (idade <= 12 && idade >= 4) {
+            
+            System.out.println("Você é uma criança!");
+            
+        } else if (idade >= 13 && idade < 18) {
+            
+            System.out.println("Você é um adolescente!");
+            
+        } else if (idade > 18) {
+            
+            System.out.println("Você é um adulto!");
+            
+        } else if (idade < 4) {
+            
+            System.out.println("Como você está aqui??? VOCÊ É UM BEBÊ!!!!");
+            
+        }
+        
+    }
+}
