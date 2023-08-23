@@ -1,0 +1,22 @@
+/*(DESAFIO) Elaborar um algoritmo que recebe 3 valores valor1 valor2, valor3 e
+os escreve. a seguir, o algoritmo deve encontrar o maior dos 3 valores e
+escrevê-lo com a mensagem: "É o maior ". Utilize apenas a fórmula abaixo. (Não
+use comandos condicionais).*/
+
+/*Maior de valor1 e valor2 -> (valor1 + valor2 + |valor1 – valor2|) / 2 */
+
+public class ExerNove{
+    public static void main(String[] args){
+        
+        double valor1 = 5.0;
+        double valor2 = 7.0;
+        double valor3 = 10.0;
+        
+        double max1 = (valor1 + valor2 + Math.abs(valor1 - valor2)) /2;
+        double maxFinal = (max1 + valor3 + Math.abs(max1 - valor3)) /2;
+        
+        System.out.println(maxFinal + " é o maior"); 
+        
+        
+    }
+}
