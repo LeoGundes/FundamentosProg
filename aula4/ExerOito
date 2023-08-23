@@ -1,0 +1,55 @@
+import java.util.*;
+
+/*Jogo de Adivinhação: Crie um jogo de adivinhação onde você escolhe um número
+aleatório entre 1 e 100 e o usuário tenta adivinhar. Use o if para informar ao usuário
+se o palpite está alto, baixo ou correto.*/
+
+public class ExerOito4 {
+    public static void main(String[] args) {
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        int x = 55;
+        int a;
+        
+        String adivinha = "Escolha um número e vou te dizer se está correto, quente ou frio.";
+        System.out.println(adivinha);
+        
+        a = digitar.nextInt();
+        
+        if(a == x) {
+            
+            System.out.println("Você acertou, parabéns!!");
+            
+        } else if (a >= 0 && a <= 40) {
+            
+            System.out.println("Ihhh, MUITO frio...");
+            
+        } else if (a >= 70 && a <= 100) {
+            
+            System.out.println("Vishh, ta MUITO frio...");
+            
+        } else if (a >= 41 && a <= 49) {
+            
+            System.out.println("Está frio, mas está quase perto...");
+            
+        } else if (a >= 60 && a <= 69) {
+            
+            System.out.println("Está frio, porém não tanto...");
+            
+        } else if (a >= 50 && a <= 53) {
+            
+            System.out.println("Está quente, vai tentando...");
+            
+        } else if (a >= 57 && a <= 59) {
+            
+            System.out.println("Está quente hein, continue...");
+            
+        } else if (a == 54 || a == 56) {
+            
+            System.out.println("OH MEU DEUS, ESTÁ MUITO QUENTE...");
+            
+        } 
+        
+    }
+}
