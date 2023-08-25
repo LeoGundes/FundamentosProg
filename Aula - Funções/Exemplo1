@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class AulaSete{
+    public static int soma(int valor1, int valor2){
+        int resultado = valor1 + valor2;
+        
+        return resultado;
+    }
+    
+    public static int soma2AoValor(int valor1){
+        return soma(valor1, 2);
+    }
+    
+    public static String retornaNome(){
+        return "Leonardo";
+    }
+    
+    public static void main(String args []){
+        
+        int resultado = soma(1,2);
+        
+        System.out.println("A soma do resultado é " + resultado);
+        
+        int resultado_2 = soma2AoValor(resultado);
+        
+        System.out.println("O resultado final é: " + resultado_2);
+        
+        System.out.println("O nome é " + retornaNome());
+        
+    } 
+}
