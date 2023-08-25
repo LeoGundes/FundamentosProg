@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+/*Questão 3: Escolha de Conversão de Unidades
+Peça ao usuário para inserir um valor em centímetros e uma unidade de medida (cm, m,
+km). Converta o valor para centimetros, metros ou quilômetros, respectivamente, e
+exiba o resultado.*/
+
+public class ExerTres{
+    public static void main(String[] args){
+        
+        Scanner digitar = new Scanner(System.in);
+        
+        System.out.println("Insira um valor em centímetros e uma unidade de medida.");
+        
+        double x;
+        
+        String valor;
+        
+        System.out.println("Insira o valor primeiro");
+        x = digitar.nextDouble();
+        
+        System.out.println("Agora insira uma unidade de medida");
+        valor = digitar.next();
+        
+        double cm = x;
+        double m = x / 100;
+        double km = m / 1000;
+        
+        switch(valor){
+            case "Centimetros":
+                System.out.println("O resultado é " + cm);
+                break;
+            case "Metros":
+                System.out.println("O resultado é " + m);
+                break;
+            case "Kilometros":
+                System.out.println("O resultado é " + km);
+                break;
+        }
+        
+    }
+}
