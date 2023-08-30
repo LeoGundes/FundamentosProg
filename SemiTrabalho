@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class SistemaVDP{
+    public static double desconto(double a){
+        
+        double d1;
+        double d2;
+        
+        if(a > 100 && a <= 200){
+            
+            d1 = a / 100 * 5;
+            d2 = a - d1;
+            
+        } else if(a > 200 && a <= 300){
+            
+            d1 = a / 100 * 10;
+            d2 = a - d1;
+            
+        } else if(a > 300){
+            
+            d1 = a / 100 * 15;
+            d2 = a - d1;
+        }else{
+            d2 = a;
+        }
+        return d2;     
+    }
+
+    
+    public static double calculaFrete(String regiao, double a){
+        double pf;
+        if(regiao.equals("sul")){
+            
+            pf = a;
+            
+            
+        }else if(regiao.equals("sudeste")){
+            
+            pf = a + 10;
+            
+        }else if(regiao.equals("Centro-Oeste")){
+            
+            pf = a + 15;
+            
+        }else if(regiao.equals("Nordeste")){
+            
+            pf = a + 25;
+            
+        }else if(regiao.equals("Norte")){
+            
+            pf = a + 40;
+            
+        }else{
+            pf = a;
+        }
+        return pf;
+}
+
+        
+    public static void main(String args []){
+        
+        double valor;
+        
+        Scanner in = new Scanner(System.in);
+        
+        String compraTotal = "Me informe o valor total da sua compra.";
+        System.out.println(compraTotal);
+        valor = in.nextDouble();
+        
+        String regiao = "Agora me informe sua região";
+        System.out.println(regiao);
+        regiao = in.next();
+        
+        double dc = desconto(valor);
+        double pf = calculaFrete(regiao,dc);
+        
+        System.out.println("O valor total ficou " + pf);
+}
+    }
