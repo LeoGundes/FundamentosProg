@@ -1,6 +1,27 @@
 import java.util.Scanner;
 
-public class SistemaVDP{
+/*Questão: Sistema de Vendas com Descontos Progressivos
+
+Imagine que você está desenvolvendo um sistema de vendas para uma loja. A loja
+oferece descontos progressivos de acordo com o valor da compra. Implemente um
+programa que calcule o valor total da compra após aplicar os descontos. O desconto
+é calculado da seguinte forma:
+
+5% de desconto para compras acima de R$ 100
+10% de desconto para compras acima de R$ 200
+15% de desconto para compras acima de R$ 300
+
+Além disso, dependendo da região de encomenda, um valor fixo de frete deve ser
+adicionado ao valor final. Região Sudeste R$ 10, Centro-Oeste R$ 15, Nordeste R$ 25
+e Norte R$ 40.
+
+O programa deve solicitar ao usurário o valor da compra, a região de entrega e exibir
+o valor total após aplicar os descontos.
+
+Você deve criar, além do método main, um método para calcular os descontos e
+outro para a adição do frete*/
+
+public class SistemaVDP2{
     public static double desconto(double a){
         
         double d1;
@@ -11,30 +32,29 @@ public class SistemaVDP{
             d1 = a / 100 * 5;
             d2 = a - d1;
             
-        } else if(a > 200 && a <= 300){
+        }else if(a > 200 && a <= 300){
             
             d1 = a / 100 * 10;
             d2 = a - d1;
             
-        } else if(a > 300){
+        }else if(a > 300){
             
             d1 = a / 100 * 15;
             d2 = a - d1;
+            
         }else{
             d2 = a;
         }
-        return d2;     
+        return d2;    
     }
-
-    
     public static double calculaFrete(String regiao, double a){
         double pf;
-        if(regiao.equals("sul")){
+        
+        if(regiao.equals("Sul")){
             
-            pf = a;
+            pf = a + 5;
             
-            
-        }else if(regiao.equals("sudeste")){
+        }else if(regiao.equals("Sudeste")){
             
             pf = a + 10;
             
@@ -48,32 +68,29 @@ public class SistemaVDP{
             
         }else if(regiao.equals("Norte")){
             
-            pf = a + 40;
+            pf = a + 45;
             
         }else{
             pf = a;
         }
         return pf;
-}
-
-        
-    public static void main(String args []){
-        
-        double valor;
-        
+    }
+    public static void main(String args[]){
+    
         Scanner in = new Scanner(System.in);
         
-        String compraTotal = "Me informe o valor total da sua compra.";
-        System.out.println(compraTotal);
-        valor = in.nextDouble();
+        int valor;
+        System.out.println("\fInforme o valor da sua compra.");
+        valor = in.nextInt();
         
-        String regiao = "Agora me informe sua região";
-        System.out.println(regiao);
+        String regiao;
+        System.out.println("Agora me informe sua região.(Sul; Sudeste; Centro-Oeste; Nordeste; Norte.)");
         regiao = in.next();
         
         double dc = desconto(valor);
-        double pf = calculaFrete(regiao,dc);
+        double pf = calculaFrete(regiao, dc);
         
-        System.out.println("O valor total ficou " + pf);
-}
+        System.out.println("O valor total da sua compra com o desconto e o frete ficou R$" + pf + " reais.");
+    
     }
+}
