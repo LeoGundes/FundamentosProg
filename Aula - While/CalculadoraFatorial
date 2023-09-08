@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+/*Questão: Calculadora de Fatorial
+Implemente uma calculadora de fatorial em Java usando um loop while. O programa
+deve solicitar ao usuário um número inteiro não negativo e calcular o fatorial desse
+número. Cuidado com números muito grandes*/
+
+public class CalculadoraFatorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("\fDigite um número inteiro positivo: ");
+        int numero = scanner.nextInt();
+        
+        int a = numero;
+        
+        while(numero > 1){
+            a = a * (numero - 1);
+            numero--;
+        }
+        
+        System.out.println(a);
+        scanner.close();
+    }
+
+}
