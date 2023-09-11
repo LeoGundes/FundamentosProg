@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+/*Questão: Tabuada de Mul0plicação
+Implemente um programa que solicite ao usuário um número inteiro e, em
+seguida, use um loop for para exibir a tabuada de multiplicação desse número
+de 1 a 10.*/
+
+public class tabuadaMultiplicacao{
+    public static void main(String[] args){
+        Scanner leitor = new Scanner(System.in);
+        int valor;
+        
+        
+        System.out.println("Insira um número de 1 à 10:");
+        valor = leitor.nextInt();
+        
+        for(int i = 1; i <= 10; i++){
+            System.out.println("Valor da tabuada é: " + (valor * i));
+        }
+
+        for(int i = 0; i > 11; i--){
+            System.out.println("Valor maior que 10.");
+        }
+    }
+}
