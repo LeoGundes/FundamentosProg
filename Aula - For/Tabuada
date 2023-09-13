@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*Questão: Tabuada de Mul0plicação
+/*Questão: Tabuada de Multiplicação
 Implemente um programa que solicite ao usuário um número inteiro e, em
 seguida, use um loop for para exibir a tabuada de multiplicação desse número
 de 1 a 10.*/
