@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/*Questão: Números Primos
+Implemente um programa que encontre e exiba os primeiros 10 números primos
+usando um loop for.*/
+
+public class NumerosPrimos {
+    public static void main(String[] args) {
+        int count = 0; // Contador para controlar o número de primos encontrados
+        int num = 2;   // Começamos com 2, o primeiro número primo
+
+        System.out.println("\fOs primeiros 10 números primos são:");
+
+        while (count < 10) { // Continua até encontrar os 10 primeiros primos
+            if (isPrimo(num)) {
+                System.out.print(num + " ");
+                count++;
+            }
+            num++;
+        }
+    }
+
+    // Função para verificar se um número é primo
+    public static boolean isPrimo(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
