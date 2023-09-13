@@ -1,0 +1,20 @@
+public class TrianguloAsteriscos {
+    public static void main(String[] args) {
+        int base = 10; // Tamanho da base do triângulo
+
+        for (int linha = 1; linha <= base; linha++) {
+            // Imprime os espaços em branco à esquerda
+            for (int espacos = 1; espacos <= base - linha; espacos++) {
+                System.out.print(" ");
+            }
+
+            // Imprime os asteriscos
+            for (int asteriscos = 1; asteriscos <= 2 * linha - 1; asteriscos++) {
+                System.out.print("*");
+            }
+
+            // Move para a próxima linha
+            System.out.println();
+        }
+    }
+}
