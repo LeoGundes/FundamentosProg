@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class trabDois {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Informe a temperatura: ");
+        double temperatura = scanner.nextDouble();
+        
+        if (temperatura <= 35) {
+            System.out.println("Você está com febre? (Sim/Não): ");
+            String respostaFebre = scanner.next();
+            
+            if (respostaFebre.equalsIgnoreCase("Sim")) {
+                System.out.println("Você está doente.");
+            } else {
+                System.out.println("Qual é o seu tipo sanguíneo (A, B, AB, O): ");
+                String tipoSanguineo = scanner.next();
+                
+                if (tipoSanguineo.equalsIgnoreCase("A") || tipoSanguineo.equalsIgnoreCase("B") || tipoSanguineo.equalsIgnoreCase("AB")) {
+                    System.out.println("Você está saudável.");
+                } else if (tipoSanguineo.equalsIgnoreCase("O")) {
+                    System.out.println("Você está doente.");
+                } else {
+                    System.out.println("Tipo sanguíneo inválido.");
+                }
+            }
+        } else {
+            System.out.println("Você está tossindo? (Sim/Não): ");
+            String respostaTosse = scanner.next();
+            
+            if (respostaTosse.equalsIgnoreCase("Sim")) {
+                System.out.println("Você está doente.");
+            } else {
+                System.out.println("Você está saudável.");
+            }
+        }
+        
+        scanner.close();
+    }
+}
