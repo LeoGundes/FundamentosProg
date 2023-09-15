@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+/*Questão: Cálculo da Média de NotasString
+Solicite ao usuário que insira uma lista de notas separadas por vírgula (por
+exemplo, "8,7,9,6") e calcule a média das notas usando um loop. Crie um método
+que recebe a string do usuário e realiza cálculo da média.*/
+
+public class notasString{
+    public static double media(double a){
+        
+    }
+    public static void main(String[] args){
+        
+    }
+}
