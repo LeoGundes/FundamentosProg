@@ -1,1 +1,16 @@
+import java.util.Scanner;
 
+/*Questão: Inverter String
+Crie um método que recebe do usuário uma String de entrada e retorna na tela
+a String contrária. Ex: Banana -> ananaB*/
+
+public class inverterString{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\fInsira uma palavra: ");
+        String palavra = scanner.next();
+        
+        String pInvertida = new StringBuilder(palavra).reverse().toString();
+        System.out.println(pInvertida);
+  }
+ }
