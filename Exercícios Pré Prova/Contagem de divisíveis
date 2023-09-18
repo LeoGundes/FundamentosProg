@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/*2. Questão: Contagem de Divisíveis
+Crie um programa que peça ao usuário para inserir um número e conte quantos
+números de 1 a N são divisíveis por 3 e por 5.*/
+
+public class questaoDois{
+    public static int contarDivisiveisPor3e5(int n){
+        int contador = 0;
+        
+        for(int i = 1; i <= n; i++){
+            if(i % 3 == 0 && i % 5 == 0){
+                contador++;
+            }
+        }
+        return contador;
+}
+    public static void main(String[] args){
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("\fInsira um número: ");
+        int n = leitor.nextInt();
+        
+        int contador = contarDivisiveisPor3e5(n);
+        
+        System.out.println("Quantidade de números divisíveis por 3 e 5 de 1 à " + n + ": " + contador);
+    }
+}
