@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class desafio{
+    public static void main(String[] args){
+        Scanner digitar = new Scanner(System.in);
+        System.out.println("Digite um número: ");
+        int n = digitar.nextInt();
+        
+        int resposta = revisao(n);
+        
+        System.out.println(resposta);
+    }
+    public static int revisao(int x){
+        int i = 0;
+        while(x != 1){
+            if(x % 2 == 0){
+                x /= 2;
+            }else{
+                x *= 3;
+                x += 1;
+            }
+            i++;
+        }
+        return i;
+    }
+}
