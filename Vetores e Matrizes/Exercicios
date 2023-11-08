@@ -1,0 +1,68 @@
+import java.util.Scanner;
+//Um método que receba um array de valores numéricos e calcule a média deles
+public class OperadorDeVetores{
+    public static void main(String[] args){
+        Scanner leitor = new Scanner(System.in);
+        int[] media = new int[5];
+        int soma = 0;
+
+        System.out.println("Insira os valores para calcularmos a média deles: ");
+        for(int i = 0; i < media.length; i++){
+            media[i] = leitor.nextInt();
+        }
+        for(int i = 0; i < media.length; i++){
+            soma += media[i];
+        }
+        int mediaValores = soma / media.length;
+        System.out.println(mediaValores);
+    }
+
+}
+
+
+
+
+import java.util.Scanner;
+//Um método que receba um array de inteiros e retorne o maior valor do array.
+public class ExerDois {
+    public static void main(String[] args){
+        Scanner leitor = new Scanner(System.in);
+        int[] maiorInt = new int[5];
+        int x = 0;
+        System.out.println("Insira os valores: ");
+        for(int i = 0; i < maiorInt.length; i++){
+            maiorInt[i] = leitor.nextInt();
+        }
+        for(int i = 0; i < maiorInt.length; i++){
+            if(x < maiorInt[i]){
+                x = maiorInt[i];
+            }
+        }
+        System.out.println(x);
+        leitor.close();
+    }
+}
+
+
+
+
+import java.util.Scanner;
+//Um método que receba um array de inteiros e retorne o menor valor do array
+public class ExerTres {
+    public static void main(String[] args){
+        Scanner leitor = new Scanner(System.in);
+        int[] menorInt = new int[5];
+        int x = 0;
+        System.out.println("Insira os valores: ");
+        for(int i = 0; i < menorInt.length; i++){
+            menorInt[i] = leitor.nextInt();
+        }
+        for(int i = 0; i < menorInt.length; i++){
+            if(x > menorInt[i]){
+                x = menorInt[i];
+            }
+        }
+        System.out.println(x);
+        leitor.close();
+    }
+}
