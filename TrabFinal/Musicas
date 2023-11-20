@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+public class Musica {
+    //Atributos
+    private String nome;
+    private int ano;
+    private int duracao;
+    private int numLikes;
+    private String artista;
+    private String genero;
+    private boolean compartilhada;
+
+    // Construtor
+    public Musica(String nome) {
+        this.nome = nome;
+        this.ano = ano;
+        this.duracao = duracao;
+        this.numLikes = numLikes;
+        this.artista = artista;
+        this.genero = genero;
+        this.compartilhada = false; // Inicializa como não compartilhada
+    }
+
+    // Métodos de próxima música e música anterior
+    public void proximaMusica() {
+        // Implementar lógica para ir para a próxima música
+    }
+
+    public void musicaAnterior() {
+        // Implementar lógica para ir para a música anterior
+    }
+
+    // Método para dar ou tirar like
+    public void toggleLike() {
+        numLikes = (numLikes == 0) ? 1 : 0;
+    }
+
+    // Método para compartilhar a música
+    public void compartilharMusica() {
+        compartilhada = true;
+        System.out.println("Song shared successfully!");
+    }
+
+    // Método de busca usando toString
+    public String toString() {
+        return "Nome: " + nome + "\nArtista: " + artista + "\nGênero: " + genero;
+    }
+
+    // Método para obter o nome da música
+    public String getNome() {
+        return nome;
+    }
+    
+    public String getArtista() {
+        return artista;
+    }
+
+    public static void main(String[] args) {
+        // Criar um array de músicas usando o método bdmcreator de BancoDeMusicas
+        BancoDeMusicas bancoDeMusicas = new BancoDeMusicas();
+        String[] nomesMusicas = bancoDeMusicas.bdmcreator();
+
+        Musica[] playlist = new Musica[nomesMusicas.length];
+
+        for (int i = 0; i < nomesMusicas.length; i++) {
+            // Criar uma instância de Musica para cada música no banco de dados
+            playlist[i] = new Musica(nomesMusicas[i]);
+        }
+
+        // Exemplo de uso
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar ao usuário que digite o nome da música
+        System.out.print("Enter the name of the song: ");
+        String nomeMusica = scanner.nextLine();
+
+        // Buscar a música no array
+        Musica musicaSelecionada = null;
+        for (Musica musica : playlist) {
+            if (musica.getNome().equalsIgnoreCase(nomeMusica)) {
+                musicaSelecionada = musica;
+                break;
+            }
+        }
+
+        // Exibir informações da música (se encontrada)
+        if (musicaSelecionada != null) {
+            System.out.println("Song information:\n" + musicaSelecionada);
+        } else {
+            System.out.println("Spotify is not connected to the Internert.");
+        }
+
+        // Fechar o scanner
+        scanner.close();
+    }
+}
