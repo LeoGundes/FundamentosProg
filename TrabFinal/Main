@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main {
+ public static void main(String[] args) {
+        BancoDeMusicas bancoDeMusicas = new BancoDeMusicas();
+        List<BancoDeMusicas.Artista> artistas = bancoDeMusicas.bdmcreator1();
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar ao usuário que digite o nome do artista
+        System.out.print("\fDigite o nome do artista: ");
+        String nomeArtista = scanner.nextLine();
+
+        // Exibir todas as músicas do artista
+        boolean artistaEncontrado = false;
+        for (BancoDeMusicas.Artista artista : artistas) {
+            if (artista.getNome().equalsIgnoreCase(nomeArtista)) {
+                artistaEncontrado = true;
+                System.out.println("Músicas do artista " + nomeArtista + ":");
+                for (Musica musica : artista.getMusicas()) {
+                    System.out.println(musica.getNome());
+                }
+                break;
+            }
+        }
+
+        if (!artistaEncontrado) {
+            System.out.println("Artista não encontrado.");
+        }
+
+        // Fechar o scanner
+        scanner.close();
+    }
+}
