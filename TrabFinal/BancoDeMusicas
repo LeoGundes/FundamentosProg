@@ -1,0 +1,267 @@
+import java.util.*;
+public class BancoDeMusicas {
+    
+    public String[] bdmcreator() {
+        
+        String[] bdm = new String[100];
+        
+        bdm[0] = "The Nights";
+        bdm[1] = "Glad You Came";
+        bdm[2] = "When I Was Your Man";
+        bdm[3] = "Locked out of Heaven";
+        bdm[4] = "Girls Like You";
+        bdm[5] = "Sweather Weather";
+        bdm[6] = "Wake Me Up";
+        bdm[7] = "Sugar";
+        bdm[8] = "Viva La Vida";
+        bdm[9] = "Billionaire";
+        bdm[10] = "Believer";
+        bdm[11] = "Waiting For Love";
+        bdm[12] = "Paradise";
+        bdm[13] = "The Scientist";
+        bdm[14] = "Animals";
+        bdm[15] = "Hey Brother";
+        bdm[16] = "Beautiful Girls";
+        bdm[17] = "Counting Stars";
+        bdm[18] = "The Lazy Song";
+        bdm[19] = "Demons";
+        bdm[20] = "All of Me";
+        bdm[21] = "Count on Me";
+        bdm[22] = "Falling";
+        bdm[23] = "Rolling in the Deep";
+        bdm[24] = "Sunflower";
+        bdm[25] = "Congratulations";
+        bdm[26] = "Better Now";
+        bdm[27] = "Payphone";
+        bdm[28] = "Circles";
+        bdm[29] = "Halo";
+        bdm[30] = "Save Yout Tears";
+        bdm[31] = "Die For You";
+        bdm[32] = "Flowers";
+        bdm[33] = "Senorita";
+        bdm[34] = "Havana";
+        bdm[35] = "Firework";
+        bdm[36] = "Murder on My Mind";
+        bdm[37] = "See You Again";
+        bdm[38] = "Heartless";
+        bdm[39] = "Rockstar";
+        bdm[40] = "Hollywood's Bleeding";
+        bdm[41] = "Chemical";
+        bdm[42] = "Let Go";
+        bdm[43] = "Lose Yourself";
+        bdm[44] = "Never Love Again";
+        bdm[45] = "Hope";
+        bdm[46] = "Moonlight";
+        bdm[47] = "Ballin";
+        bdm[48] = "Chapters";
+        bdm[49] = "Changes";
+        bdm[50] = "Duckworth";
+        bdm[51] = "God";
+        bdm[52] = "Fear";
+        bdm[53] = "XXX";
+        bdm[54] = "Love";
+        bdm[55] = "Lust";
+        bdm[56] = "Humble";
+        bdm[57] = "Pride";
+        bdm[58] = "Loyalty";
+        bdm[59] = "Feel";
+        bdm[60] = "Element";
+        bdm[61] = "Yah";
+        bdm[62] = "DNA";
+        bdm[63] = "Blood";
+        bdm[64] = "Coffee Bean";
+        bdm[65] = "Houstonfornication";
+        bdm[66] = "Butterfly Effect";
+        bdm[67] = "Who? What!";
+        bdm[68] = "Can´t Say";
+        bdm[69] = "Yosemite";
+        bdm[70] = "Astrothunder";
+        bdm[70] = "NC-17";
+        bdm[71] = "5% Tint";
+        bdm[72] = "Wake Up";
+        bdm[73] = "Skeletons";
+        bdm[74] = "No Bystanders";
+        bdm[75] = "Stop Trying To Be God";
+        bdm[76] = "R.I.P. Screw";
+        bdm[77] = "Sicko Mode";
+        bdm[78] = "Carousel";
+        bdm[79] = "Stargazing";
+        bdm[80] = "Everything's Not Lost";
+        bdm[81] = "We Never Change";
+        bdm[82] = "High Speed";
+        bdm[83] = "Parachutes";
+        bdm[84] = "Trouble";
+        bdm[85] = "Yellow";
+        bdm[86] = "Sparks";
+        bdm[87] = "Spies";
+        bdm[88] = "Shiver";
+        bdm[89] = "Don't Panic";
+        bdm[90] = "Blast Off";
+        bdm[91] = "Love's Train";
+        bdm[92] = "Skate";
+        bdm[93] = "777";
+        bdm[94] = "Put On A Smile";
+        bdm[95] = "Smokin Out The Window";
+        bdm[96] = "After Last Night";
+        bdm[97] = "Fly As Me";
+        bdm[98] = "Leave The Door Open";
+        bdm[99] = "Silk Sonic Intro";
+        
+        return bdm;
+      
+    }
+    
+    public String[] bmcreator() {
+        
+        String[] anev = new String[10];
+        
+        anev[0] = "Silk Sonic Intro";
+        anev[1] = "Leave The Door Open";
+        anev[2] = "Fly As Me";
+        anev[3] = "After Last Night";
+        anev[4] = "Smokin Out The Window";
+        anev[5] = "Put On A Smile";
+        anev[6] = "777";
+        anev[7] = "Skate";
+        anev[8] = "Love's Train";
+        anev[9] = "Blast Off";
+        
+        return anev;
+    }
+    
+    public String[] cpcreator() {
+        
+        String[] par = new String[10];
+        
+        par[0] = "Don't Panic";
+        par[1] = "Shiver";
+        par[2] = "Spies";
+        par[3] = "Sparks";
+        par[4] = "Yellow";
+        par[5] = "Trouble";
+        par[6] = "Parachutes";
+        par[7] = "High Speed";
+        par[8] = "We Never Change";
+        par[9] = "Everything's Not Lost";
+        
+        return par;
+    }
+    
+    public String[] tscreator() {
+        
+        String[] astro = new String[17];
+        
+        astro[0] = "Stargazing";
+        astro[1] = "Carousel";
+        astro[2] = "Sicko Mode";
+        astro[3] = "R.I.P. Screw";
+        astro[4] = "Stop Trying To Be God";
+        astro[5] = "No Bystanders";
+        astro[6] = "Skeletons";
+        astro[7] = "Wake Up";
+        astro[8] = "5% Tint";
+        astro[9] = "NC-17";
+        astro[10] = "Astrothunder";
+        astro[11] = "Yosemite";
+        astro[12] = "Can´t Say";
+        astro[13] = "Who? What!";
+        astro[14] = "Butterfly Effect";
+        astro[15] = "Houstonfornication";
+        astro[16] = "Coffee Bean";
+        
+        return astro;
+    }
+    
+    public String[] klcreator() {
+        
+        String[] damn = new String[17];
+        
+        damn[0] = "Blood";
+        damn[1] = "DNA";
+        damn[2] = "Yah";
+        damn[3] = "Element";
+        damn[4] = "Feel";
+        damn[5] = "Loyalty";
+        damn[6] = "Pride";
+        damn[7] = "Humble";
+        damn[8] = "Lust";
+        damn[9] = "Love";
+        damn[10] = "XXX";
+        damn[11] = "Fear";
+        damn[12] = "God";
+        damn[13] = "Duckworth";
+        
+        return damn;
+    }
+    
+    class Artista {
+        private String nome;
+        private List<Musica> musicas;
+
+        // Construtor
+        public Artista(String nome) {
+        this.nome = nome;
+        this.musicas = new ArrayList<>();
+        }
+
+        // Adicionar música ao artista
+        public void adicionarMusica(Musica musica) {
+        musicas.add(musica);
+        }
+
+        // Obter todas as músicas do artista
+        public List<Musica> getMusicas() {
+        return musicas;
+        }
+
+        // Obter o nome do artista
+        public String getNome() {
+        return nome;
+        }
+    }
+    public List<Artista> bdmcreator1() {
+        List<Artista> artistas = new ArrayList<>();
+
+        // Criação de artistas e associação de músicas
+        Artista travis = new Artista("Travis Scott");
+        travis.adicionarMusica(new Musica("AstroThunder"));
+        travis.adicionarMusica(new Musica("Butterfly Effect"));
+        travis.adicionarMusica(new Musica("Can't Say"));
+        travis.adicionarMusica(new Musica("Carousel"));
+        travis.adicionarMusica(new Musica("Coffee Bean"));
+        travis.adicionarMusica(new Musica("Houstonfornication"));
+        travis.adicionarMusica(new Musica("NC-17"));
+        travis.adicionarMusica(new Musica("No Bystanders"));
+        travis.adicionarMusica(new Musica("R.I.P. Screw"));
+        travis.adicionarMusica(new Musica("Stargazing"));
+        travis.adicionarMusica(new Musica("Skeletons"));
+        travis.adicionarMusica(new Musica("Sicko Mode"));
+        travis.adicionarMusica(new Musica("Stop Trying To Be God"));
+        travis.adicionarMusica(new Musica("Wake Up"));
+        travis.adicionarMusica(new Musica("Who? What!"));
+        travis.adicionarMusica(new Musica("Yosemite"));
+        travis.adicionarMusica(new Musica("5% Tint"));
+        
+        artistas.add(travis);
+
+        Artista bMars = new Artista("Bruno Mars");
+        bMars.adicionarMusica(new Musica("After last Night"));
+        bMars.adicionarMusica(new Musica("Billionaire"));
+        bMars.adicionarMusica(new Musica("Blast Off"));
+        bMars.adicionarMusica(new Musica("Count on Me"));
+        bMars.adicionarMusica(new Musica("Fly As Me"));
+        bMars.adicionarMusica(new Musica("Leave The Door Open"));
+        bMars.adicionarMusica(new Musica("Locked out of Heaven"));
+        bMars.adicionarMusica(new Musica("Love's Train"));
+        bMars.adicionarMusica(new Musica("Put On A Smile"));
+        bMars.adicionarMusica(new Musica("Silk Sonic Intro"));
+        bMars.adicionarMusica(new Musica("Skate"));
+        bMars.adicionarMusica(new Musica("The Lazy Song"));
+        bMars.adicionarMusica(new Musica("When I Was Your Man"));
+        bMars.adicionarMusica(new Musica("777"));
+        
+        artistas.add(bMars);
+
+        return artistas;
+    }
+}
